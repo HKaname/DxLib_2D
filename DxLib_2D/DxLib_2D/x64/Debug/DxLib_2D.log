@@ -1,2 +1,24 @@
 ﻿  main.cpp
-  DxLib_2D.vcxproj -> C:\Users\ougi2\OneDrive\デスクトップ\DxLib_2D\DxLib_2D\x64\Debug\DxLib_2D.exe
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  (ソース ファイル 'main.cpp' をコンパイルしています)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82):
+      テンプレートインスタンス化コンテキスト (最初に最も古いもの) は
+          G:\マイドライブ\DxLib_2D\DxLib_2D\main.cpp(30,9):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<Transform> Entity::AddComponent<Transform,int&,int&>(int &,int &)' のリファレンスを確認してください
+          G:\マイドライブ\DxLib_2D\DxLib_2D\Entity.h(15,25):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<Transform> std::make_shared<Transform,Entity*,int&,int&>(Entity *&&,int &,int &)' のリファレンスを確認してください
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2903,46):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::_Ref_count_obj2<Transform>::_Ref_count_obj2<_Ty,int&,int&>(_Ty &&,int &,int &)' のリファレンスを確認してください
+          with
+          [
+              _Ty=Entity *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2092,18):
+          コンパイル対象の関数 テンプレート インスタンス化 'void std::_Construct_in_place<_Ty,Entity*,int&,int&>(_Ty &,Entity *&&,int &,int &) noexcept(false)' のリファレンスを確認してください
+          with
+          [
+              _Ty=Transform
+          ]
+  
+  LINK : 前回のインクリメンタル リンクで G:\マイドライブ\DxLib_2D\DxLib_2D\x64\Debug\DxLib_2D.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
+  DxLib_2D.vcxproj -> G:\マイドライブ\DxLib_2D\DxLib_2D\x64\Debug\DxLib_2D.exe
