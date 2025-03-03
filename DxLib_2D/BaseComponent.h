@@ -15,4 +15,5 @@ public:
 	// すべてのコンポーネントが持つ共通メソッド
 	virtual void Init() {}   // 初期化
 	virtual void Update() {}  // フレームごとの更新
+	virtual void Draw() {} // 描画
 };

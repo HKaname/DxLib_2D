@@ -145,11 +145,19 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="SceneGame.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="SceneTitle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseComponent.h" />
+    <ClInclude Include="BaseScene.h" />
     <ClInclude Include="Entity.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="SceneGame.h" />
+    <ClInclude Include="SceneManager.h" />
+    <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="SpriteRenderer.h" />
     <ClInclude Include="Transform.h" />
   </ItemGroup>

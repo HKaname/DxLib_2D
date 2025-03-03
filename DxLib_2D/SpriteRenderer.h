@@ -32,7 +32,7 @@ public:
 	}
 
 	// •`‰æˆ—
-	void Draw() {
+	void Draw() override {
 		if (transform && spriteHandle != -1) {
 			DrawGraph((int)transform->x, (int)transform->y, spriteHandle, TRUE);
 		}

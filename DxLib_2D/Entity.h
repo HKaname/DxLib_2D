@@ -14,6 +14,7 @@ public:
 	std::shared_ptr<T> AddComponent(Args&&... args) {
 		auto component = std::make_shared<T>(this, std::forward<Args>(args)...);
 		components[std::type_index(typeid(T))] = component;
+		component->Init();
 		return component;
 	}
 
@@ -35,6 +36,12 @@ public:
 	void Update() {
 		for (auto& [_, component] : components) {
 			component->Update();
+		}
+	}
+
+	void Draw() {
+		for (auto& [_, component] : components) {
+			component->Draw();
 		}
 	}
 };

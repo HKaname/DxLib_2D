@@ -1,24 +1,90 @@
-﻿  main.cpp
-C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-  (ソース ファイル 'main.cpp' をコンパイルしています)
+﻿  SceneManager.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244: '引数': '_Ty' から 'float' への変換です。データが失われる可能性があります。
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244:         with
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244:         [
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244:             _Ty=int
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82): warning C4244:         ]
+  (ソース ファイル 'SceneManager.cpp' をコンパイルしています)
       C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82):
       テンプレートインスタンス化コンテキスト (最初に最も古いもの) は
-          G:\マイドライブ\DxLib_2D\DxLib_2D\main.cpp(30,9):
-          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<Transform> Entity::AddComponent<Transform,int&,int&>(int &,int &)' のリファレンスを確認してください
-          G:\マイドライブ\DxLib_2D\DxLib_2D\Entity.h(15,25):
-          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<Transform> std::make_shared<Transform,Entity*,int&,int&>(Entity *&&,int &,int &)' のリファレンスを確認してください
+          C:\Users\ougi2\OneDrive\デスクトップ\DxLib_2D\DxLib_2D\Player.h(10,20):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<Transform> Entity::AddComponent<Transform,int,int>(int &&,int &&)' のリファレンスを確認してください
+          C:\Users\ougi2\OneDrive\デスクトップ\DxLib_2D\DxLib_2D\Entity.h(15,25):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<Transform> std::make_shared<Transform,Entity*,_Ty,_Ty>(Entity *&&,_Ty &&,_Ty &&)' のリファレンスを確認してください
+          with
+          [
+              _Ty=int
+          ]
           C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2903,46):
-          コンパイル対象の関数 テンプレート インスタンス化 'std::_Ref_count_obj2<Transform>::_Ref_count_obj2<_Ty,int&,int&>(_Ty &&,int &,int &)' のリファレンスを確認してください
+          コンパイル対象の関数 テンプレート インスタンス化 'std::_Ref_count_obj2<Transform>::_Ref_count_obj2<_Ty,int,int>(_Ty &&,int &&,int &&)' のリファレンスを確認してください
           with
           [
               _Ty=Entity *
           ]
           C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2092,18):
-          コンパイル対象の関数 テンプレート インスタンス化 'void std::_Construct_in_place<_Ty,Entity*,int&,int&>(_Ty &,Entity *&&,int &,int &) noexcept(false)' のリファレンスを確認してください
+          コンパイル対象の関数 テンプレート インスタンス化 'void std::_Construct_in_place<_Ty,Entity*,int,int>(_Ty &,Entity *&&,int &&,int &&) noexcept(false)' のリファレンスを確認してください
           with
           [
               _Ty=Transform
           ]
   
-  LINK : 前回のインクリメンタル リンクで G:\マイドライブ\DxLib_2D\DxLib_2D\x64\Debug\DxLib_2D.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
-  DxLib_2D.vcxproj -> G:\マイドライブ\DxLib_2D\DxLib_2D\x64\Debug\DxLib_2D.exe
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,61): error C2661: 'SpriteRenderer::SpriteRenderer': 3 個の引数を伴うオーバーロードされた関数はありません。
+  (ソース ファイル 'SceneManager.cpp' をコンパイルしています)
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,61):
+      引数リスト '(_Ty, std::shared_ptr<Transform>, const char [26])' を一致させようとしているとき
+          with
+          [
+              _Ty=Entity *
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,61):
+      テンプレートインスタンス化コンテキスト (最初に最も古いもの) は
+          C:\Users\ougi2\OneDrive\デスクトップ\DxLib_2D\DxLib_2D\Player.h(11,3):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<SpriteRenderer> Entity::AddComponent<SpriteRenderer,std::shared_ptr<Transform>&,const char(&)[26]>(std::shared_ptr<Transform> &,const char (&)[26])' のリファレンスを確認してください
+          C:\Users\ougi2\OneDrive\デスクトップ\DxLib_2D\DxLib_2D\Entity.h(15,25):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<SpriteRenderer> std::make_shared<SpriteRenderer,Entity*,std::shared_ptr<Transform>&,const char(&)[26]>(Entity *&&,std::shared_ptr<Transform> &,const char (&)[26])' のリファレンスを確認してください
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2903,46):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::_Ref_count_obj2<SpriteRenderer>::_Ref_count_obj2<_Ty,std::shared_ptr<Transform>&,const char(&)[26]>(_Ty &&,std::shared_ptr<Transform> &,const char (&)[26])' のリファレンスを確認してください
+          with
+          [
+              _Ty=Entity *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2092,18):
+          コンパイル対象の関数 テンプレート インスタンス化 'void std::_Construct_in_place<_Ty,Entity*,std::shared_ptr<Transform>&,const char(&)[26]>(_Ty &,Entity *&&,std::shared_ptr<Transform> &,const char (&)[26]) noexcept(false)' のリファレンスを確認してください
+          with
+          [
+              _Ty=SpriteRenderer
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,61): error C2665: 'PlayerController::PlayerController': オーバーロードされた関数ですべての引数の型を変換できませんでした
+  (ソース ファイル 'SceneManager.cpp' をコンパイルしています)
+      C:\Users\ougi2\OneDrive\デスクトップ\DxLib_2D\DxLib_2D\PlayerController.h(12,2):
+      'PlayerController::PlayerController(Entity *,Transform *,float)' の可能性があります
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,61):
+          'PlayerController::PlayerController(Entity *,Transform *,float)': 引数 2 を 'std::shared_ptr<Transform>' から 'Transform *' へ変換できません。
+              C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,82):
+              この変換を実行可能なユーザー定義変換演算子がないか、または演算子を呼び出せません。
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,61):
+      引数リスト '(_Ty, std::shared_ptr<Transform>)' を一致させようとしているとき
+          with
+          [
+              _Ty=Entity *
+          ]
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\xutility(506,61):
+      テンプレートインスタンス化コンテキスト (最初に最も古いもの) は
+          C:\Users\ougi2\OneDrive\デスクトップ\DxLib_2D\DxLib_2D\Player.h(12,3):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<PlayerController> Entity::AddComponent<PlayerController,std::shared_ptr<Transform>&>(std::shared_ptr<Transform> &)' のリファレンスを確認してください
+          C:\Users\ougi2\OneDrive\デスクトップ\DxLib_2D\DxLib_2D\Entity.h(15,25):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::shared_ptr<PlayerController> std::make_shared<PlayerController,Entity*,std::shared_ptr<Transform>&>(Entity *&&,std::shared_ptr<Transform> &)' のリファレンスを確認してください
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2903,46):
+          コンパイル対象の関数 テンプレート インスタンス化 'std::_Ref_count_obj2<PlayerController>::_Ref_count_obj2<_Ty,std::shared_ptr<Transform>&>(_Ty &&,std::shared_ptr<Transform> &)' のリファレンスを確認してください
+          with
+          [
+              _Ty=Entity *
+          ]
+          C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.43.34808\include\memory(2092,18):
+          コンパイル対象の関数 テンプレート インスタンス化 'void std::_Construct_in_place<_Ty,Entity*,std::shared_ptr<Transform>&>(_Ty &,Entity *&&,std::shared_ptr<Transform> &) noexcept(false)' のリファレンスを確認してください
+          with
+          [
+              _Ty=PlayerController
+          ]
+  
